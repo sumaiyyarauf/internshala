@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for MBBS abroad in top countries. Learn about eligibility, process, and benefits.">
+    <title>Study MBBS Abroad</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script>
+        fbq('init', 'FB_PIXEL_ID'); 
+        fbq('track', 'PageView');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/30 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">MBBS Abroad</a>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-800 hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-blue-600 transition">About</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600 transition">Courses</a>
+                <a href="#lead-form" class="text-gray-800 hover:text-blue-600 transition">Contact</a>
+            </nav>
+
+            <button id="menuBtn" class="md:hidden text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+            <nav class="flex flex-col space-y-4 p-6 text-center">
+                <a href="#" class="text-gray-800 hover:text-blue-600 transition">Home</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600 transition">About</a>
+                <a href="#lead-form" class="text-gray-800 hover:text-blue-600 transition">Courses</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        document.querySelectorAll("#mobileMenu a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+            });
+        });
+    </script>
+
+
+    <section class="fixed top-0 left-0 w-full h-screen z-[-10] text-white text-center flex flex-col justify-center items-center" 
+            style="background-image: url(https://images.pexels.com/photos/3985153/pexels-photo-3985153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); background-size: cover; background-position: center;">
+    
+            <div class="p-4 rounded-xl bg-[rgba(29,78,216,0.5)]">
+                <h1 class="text-4xl font-bold text-white">Apply Now for MBBS Abroad</h1>
+                <p class="mt-4 text-white">Get admission in top medical universities worldwide.</p>
+                <a href="#lead-form" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg">Apply Now</a>
+            </div>
+         
+    </section>
+
+  
+    <section id="about" class="w-full mt-[100vh] bg-white py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-black">Why Study <span class="text-blue-700">MBBS</span> Abroad?</h2>
+            <p class="mt-4 text-gray-600 text-lg">Pursuing an MBBS degree abroad comes with numerous benefits, from affordability to global recognition.</p>
+    
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-blue-100 p-6 rounded-xl shadow-lg transition transform hover:scale-105">
+                    <div class="flex justify-center">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135706.png" alt="Tuition Fees" class="w-16">
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-blue-900">Affordable Tuition</h3>
+                    <p class="mt-2 text-gray-700">Lower tuition costs compared to private medical colleges in your home country.</p>
+                </div>
+    
+                <div class="bg-green-100 p-6 rounded-xl shadow-lg transition transform hover:scale-105">
+                    <div class="flex justify-center">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3909/3909444.png" alt="Global Recognition" class="w-16">
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-green-900">Global Recognition</h3>
+                    <p class="mt-2 text-gray-700">Degrees recognized by WHO, NMC, and various international medical councils.</p>
+                </div>
+    
+                <div class="bg-yellow-100 p-6 rounded-xl shadow-lg transition transform hover:scale-105">
+                    <div class="flex justify-center">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2721/2721087.png" alt="Research Facilities" class="w-16">
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-yellow-900">Advanced Facilities</h3>
+                    <p class="mt-2 text-gray-700">World-class medical research facilities and hands-on clinical training.</p>
+                </div>
+    
+                <div class="bg-red-100 p-6 rounded-xl shadow-lg transition transform hover:scale-105">
+                    <div class="flex justify-center">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3065/3065807.png" alt="Multicultural Environment" class="w-16">
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-red-900">Cultural Exposure</h3>
+                    <p class="mt-2 text-gray-700">Study in a multicultural environment, enhancing your global perspective.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section class="bg-gray-200 p-8">
+        <h2 class="text-4xl font-bold text-center text-black">Top Countries for <span class="text-blue-700" >MBBS</span></h2>
+        <p class="text-lg text-gray-700 text-center mt-2">Explore the best countries offering affordable and globally recognized MBBS programs.</p>
+   
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-8">
+         
+            <div class="bg-white p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://flagcdn.com/w80/ru.png" alt="Russia Flag" class="w-16 mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Russia</h3>
+                <p class="text-gray-600 text-sm mt-2">Affordable MBBS with globally recognized degrees.</p>
+                <button class="mt-4 text-blue-600 font-medium underline" onclick="toggleDetails('russia')">Know More</button>
+                <p id="russia" class="text-gray-600 text-sm mt-2 hidden">Russia offers low-cost education with top-ranked universities and modern infrastructure.</p>
+            </div>
+    
+            <div class="bg-white p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://flagcdn.com/w80/uz.png" alt="Uzbekistan Flag" class="w-16 mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Uzbekistan</h3>
+                <p class="text-gray-600 text-sm mt-2">High-quality education with low living costs.</p>
+                <button class="mt-4 text-blue-600 font-medium underline" onclick="toggleDetails('uzbekistan')">Know More</button>
+                <p id="uzbekistan" class="text-gray-600 text-sm mt-2 hidden">Uzbekistan provides English-medium MBBS courses with MCI and WHO recognition.</p>
+            </div>
+    
+            <div class="bg-white p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://flagcdn.com/w80/kz.png" alt="Kazakhstan Flag" class="w-16 mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Kazakhstan</h3>
+                <p class="text-gray-600 text-sm mt-2">Recognized by WHO and MCI with modern infrastructure.</p>
+                <button class="mt-4 text-blue-600 font-medium underline" onclick="toggleDetails('kazakhstan')">Know More</button>
+                <p id="kazakhstan" class="text-gray-600 text-sm mt-2 hidden">Kazakhstan offers affordable MBBS programs with practical exposure in top hospitals.</p>
+            </div>
+    
+            <div class="bg-white p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://flagcdn.com/w80/ph.png" alt="Philippines Flag" class="w-16 mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Philippines</h3>
+                <p class="text-gray-600 text-sm mt-2">English-speaking country with US-based curriculum.</p>
+                <button class="mt-4 text-blue-600 font-medium underline" onclick="toggleDetails('philippines')">Know More</button>
+                <p id="philippines" class="text-gray-600 text-sm mt-2 hidden">Philippines offers an American curriculum with excellent FMGE passing rates.</p>
+            </div>
+    
+            <div class="bg-white p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://flagcdn.com/w80/ge.png" alt="Georgia Flag" class="w-16 mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Georgia</h3>
+                <p class="text-gray-600 text-sm mt-2">European standard education with top universities.</p>
+                <button class="mt-4 text-blue-600 font-medium underline" onclick="toggleDetails('georgia')">Know More</button>
+                <p id="georgia" class="text-gray-600 text-sm mt-2 hidden">Georgia offers high-quality education with globally recognized MBBS programs.</p>
+            </div>
+    
+            <div class="bg-white p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://flagcdn.com/w80/eg.png" alt="Egypt Flag" class="w-16 mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Egypt</h3>
+                <p class="text-gray-600 text-sm mt-2">Oldest medical institutions with practical exposure.</p>
+                <button class="mt-4 text-blue-600 font-medium underline" onclick="toggleDetails('egypt')">Know More</button>
+                <p id="egypt" class="text-gray-600 text-sm mt-2 hidden">Egypt has some of the oldest medical universities with extensive clinical training.</p>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section class="bg-white mx-auto p-8">
+        <h2 class="text-4xl font-bold text-center text-black">Admission Process & Eligibility</h2>
+        <p class="text-lg text-gray-700 text-center mt-2">Follow these simple steps to secure your MBBS admission abroad.</p>
+    
+        <div class="mt-6 space-y-6 max-w-3xl mx-auto">
+    
+            <div>
+                <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg bg-gray-100 rounded-md hover:bg-gray-200 transition"
+                    onclick="toggleStep('step1')">
+                    ✅ Check Eligibility Criteria
+                    <span>+</span>
+                </button>
+                <p id="step1" class="hidden text-gray-600 text-md mt-2 p-4 bg-gray-50 rounded-md">
+                    To apply for MBBS abroad, you generally need:  
+                    - A minimum of 50% marks in 12th grade (PCB).  
+                    - NEET qualification (for Indian students).  
+                    - Age requirement: 17+ years.  
+                </p>
+            </div>
+  
+            <div>
+                <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg bg-gray-100 rounded-md hover:bg-gray-200 transition"
+                    onclick="toggleStep('step2')">
+                    📄 Submit Required Documents
+                    <span>+</span>
+                </button>
+                <p id="step2" class="hidden text-gray-600 text-md mt-2 p-4 bg-gray-50 rounded-md">
+                    Documents needed:  
+                    - 10th & 12th mark sheets  
+                    - Passport copy  
+                    - NEET scorecard (if required)  
+                    - Passport-sized photos  
+                    - Medical fitness certificate  
+                </p>
+            </div>
+    
+            <div>
+                <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg bg-gray-100 rounded-md hover:bg-gray-200 transition"
+                    onclick="toggleStep('step3')">
+                    📩 Get Admission Confirmation
+                    <span>+</span>
+                </button>
+                <p id="step3" class="hidden text-gray-600 text-md mt-2 p-4 bg-gray-50 rounded-md">
+                    Once your documents are verified, you will receive an **Admission Letter** from the university.  
+                    The next step is to pay the initial tuition fee to confirm your seat.
+                </p>
+            </div>
+    
+            <div>
+                <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg bg-gray-100 rounded-md hover:bg-gray-200 transition"
+                    onclick="toggleStep('step4')">
+                    ✈️ Apply for a Student Visa
+                    <span>+</span>
+                </button>
+                <p id="step4" class="hidden text-gray-600 text-md mt-2 p-4 bg-gray-50 rounded-md">
+                    Apply for a **student visa** with:  
+                    - University admission letter  
+                    - Valid passport  
+                    - Visa application form  
+                    - Medical test results  
+                    - Financial proof (Bank statement)  
+                </p>
+            </div>
+    
+            <div>
+                <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg bg-gray-100 rounded-md hover:bg-gray-200 transition"
+                    onclick="toggleStep('step5')">
+                    🏫 Book Flight & Travel to University
+                    <span>+</span>
+                </button>
+                <p id="step5" class="hidden text-gray-600 text-md mt-2 p-4 bg-gray-50 rounded-md">
+                    - Book your flight tickets once you receive the **student visa**.  
+                    - Pack essentials (documents, medical insurance, etc.).  
+                    - Arrive at your university and complete the registration process.  
+                    - Start your MBBS journey! 🎉  
+                </p>
+            </div>
+    
+        </div>
+    </section>
+    
+    <script>
+        function toggleStep(stepId) {
+            const step = document.getElementById(stepId);
+            step.classList.toggle("hidden");
+        }
+    </script>
+    
+    
+    <section id="lead-form" class=" py-8 flex justify-center items-center min-h-screen" 
+    style="background-image: url(https://images.pexels.com/photos/11661531/pexels-photo-11661531.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load); 
+           background-size: cover; background-position: center;">
+
+    <div class="bg-white/20 backdrop-blur-md p-8 shadow-lg rounded-lg max-w-lg w-full mx-auto">
+        <h2 class="text-3xl font-bold text-center text-white">Apply Now</h2>
+        <form id="contactForm" class="mt-6">
+            <input type="text" id="name" placeholder="Your Name" 
+                class="w-full p-3 border rounded-lg mb-4 bg-white/80 focus:bg-white outline-none" required>
+            
+            <input type="email" id="email" placeholder="Your Email" 
+                class="w-full p-3 border rounded-lg mb-4 bg-white/80 focus:bg-white outline-none" required>
+            
+            <input type="tel" id="phone" placeholder="Your Phone" 
+                class="w-full p-3 border rounded-lg mb-4 bg-white/80 focus:bg-white outline-none" required>
+            
+            <select id="country" class="w-full p-3 border rounded-lg mb-4 bg-white/80 focus:bg-white outline-none" required>
+                <option value="">Select Country</option>
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Egypt">Egypt</option>
+            </select>
+
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg w-full hover:bg-blue-700 transition">Submit</button>
+        </form>
+        
+        <p id="formMessage" class="mt-4 text-center text-green-500"></p>
+    </div>
+   </section>
+
+   <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+       
+        <div>
+            <h3 class="text-xl font-bold">About Us</h3>
+            <p class="mt-4 text-gray-400">
+                We help students pursue their MBBS dreams abroad with expert guidance and seamless admission processes.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold">Quick Links</h3>
+            <ul class="mt-4 space-y-2">
+                <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition">Admission Process</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold">Contact Us</h3>
+            <p class="mt-4 text-gray-400">📍 Nagpur, India</p>
+            <p class="mt-2 text-gray-400">📞 +91 98765 43210</p>
+            <p class="mt-2 text-gray-400">✉ info@example.com</p>
+
+            <div class="flex mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-8 text-gray-500 text-sm">
+        © 2025 YourCompany. All rights reserved.
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        function toggleDetails(country) {
+            const details = document.getElementById(country);
+            details.classList.toggle("hidden");
+        }
+    </script>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const country = document.getElementById("country").value;
+            
+            if (name && email && phone && country) {
+                document.getElementById("formMessage").innerText = "Thank you for applying! We'll contact you soon.";
+                this.reset();
+            } else {
+                document.getElementById("formMessage").innerText = "Please fill in all fields.";
+            }
+        });
+    </script>
+</body>
+</html>
